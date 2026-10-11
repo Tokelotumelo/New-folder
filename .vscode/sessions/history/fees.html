@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculate Fees</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">🎮 Gaming & Esports Arena</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Calculate Fees</h2>
+    <input id="bookings" type="number" placeholder="Number of bookings">
+    <input id="price" type="number" placeholder="Package cost">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+  </section>
+
+  <script>
+    function calculate() {
+      const bookings = parseInt(document.getElementById('bookings').value);
+      const price = parseFloat(document.getElementById('price').value);
+      const discount = bookings >= 5 ? 0.1 : 0;
+      const total = bookings * price * (1 - discount);
+      document.getElementById('result').innerText =
+        `Total: R${total.toFixed(2)} (Discount: ${discount * 100}%)`;
+    }
+  </script>
+
+  <footer>
+    <p>© 2026 Gaming & Esports Arena</p>
+  </footer>
+</body>
+</html>
