@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Adventure Escape SA</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="assets/images/Adventure Escape SA Logo.png"
+          alt="Adventure Escape SA Logo"
+          class="logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="adventures.html">Adventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="activity">Select Activity:</label>
+          <select id="activity" name="activity">
+            <option>Ultimate Adventure Day</option>
+            <option>Family Explorer</option>
+            <option>Mountain Adventure</option>
+            <option>Corporate Team Challenge</option>
+            <option>Ziplining</option>
+            <option>Kayaking</option>
+            <option>Rock Climbing</option>
+          </select>
+
+          <label for="date">Select Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <aside class="contact-panel">
+          <h2>Adventure Escape SA</h2>
+          <ul class="contact-details">
+            <li>Email: hello@adventureescapesa.co.za</li>
+            <li>Phone: +27 21 555 0199</li>
+            <li>Location: Cape Town, Western Cape</li>
+            <li>Hours: Mon-Sat, 8:00am - 5:00pm</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Adventure Escape SA | Cape Town, Western Cape</p>
+    </footer>
+  </body>
+</html>
