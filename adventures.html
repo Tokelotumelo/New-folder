@@ -26,91 +26,202 @@
     <section class="adventures">
       <h1>Our Adventure Packages</h1>
       <div class="cards">
-        <article class="card">
+        <article class="card" data-price="1500">
           <img
             src="assets/images/capetownmountain landscape.jpeg"
             alt="Ultimate Adventure Day"
           />
           <div class="card-content">
             <h2>Ultimate Adventure Day</h2>
-            <p>Full-day guided outdoor experience.</p>
-            <p><strong>R1500</strong></p>
+            <p><strong>Package Fee:</strong> R1500</p>
+            <p>
+              <strong>Purpose:</strong> A full-day outdoor adventure featuring
+              multiple exciting activities.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Guided hiking trail</li>
+              <li>Ziplining</li>
+              <li>Kayaking</li>
+              <li>Lunch</li>
+              <li>Safety briefing and equipment</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-price="1500">
           <img
             src="assets/images/family kayaking outdoors.jpeg"
             alt="Family Explorer"
           />
           <div class="card-content">
-            <h2>Family Explorer</h2>
-            <p>Fun and safe adventure for families.</p>
-            <p><strong>R1500</strong></p>
+            <h2>Family Explorer Package</h2>
+            <p><strong>Package Fee:</strong> R1500</p>
+            <p>
+              <strong>Purpose:</strong> A fun-filled outdoor experience designed
+              for families.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Nature walk</li>
+              <li>Obstacle course</li>
+              <li>Picnic area</li>
+              <li>Family games</li>
+              <li>Guided wildlife spotting</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-price="1500">
           <img
             src="assets/images/mountain hike.jpeg"
             alt="Mountain Adventure"
           />
           <div class="card-content">
-            <h2>Mountain Adventure</h2>
-            <p>Guided hike and climbing experience.</p>
-            <p><strong>R1500</strong></p>
+            <h2>Mountain Adventure Package</h2>
+            <p><strong>Package Fee:</strong> R1500</p>
+            <p>
+              <strong>Purpose:</strong> A guided mountain adventure for outdoor
+              enthusiasts.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Mountain hiking</li>
+              <li>Scenic viewpoints</li>
+              <li>Rock scrambling</li>
+              <li>Safety equipment</li>
+              <li>Professional guide</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-price="1500">
           <img
             src="assets/images/team building outdoors.jpeg"
             alt="Corporate Team Challenge"
           />
           <div class="card-content">
             <h2>Corporate Team Challenge</h2>
-            <p>Team-building adventure for groups.</p>
-            <p><strong>R1500</strong></p>
+            <p><strong>Package Fee:</strong> R1500</p>
+            <p>
+              <strong>Purpose:</strong> Team-building activities designed for
+              businesses and organisations.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Team obstacle course</li>
+              <li>Orienteering challenge</li>
+              <li>Raft-building activity</li>
+              <li>Leadership exercises</li>
+              <li>Team awards</li>
+            </ul>
           </div>
         </article>
       </div>
 
       <h1>Individual Activities</h1>
       <div class="cards">
-        <article class="card">
+        <article class="card" data-price="750">
           <img src="assets/images/ziplining forest.jpeg" alt="Ziplining" />
           <div class="card-content">
-            <h2>Ziplining</h2>
-            <p>Thrilling forest zipline adventure.</p>
-            <p><strong>R750</strong></p>
+            <h2>Ziplining Adventure</h2>
+            <p><strong>Fee:</strong> R750</p>
+            <p>
+              <strong>Purpose:</strong> Experience breathtaking views while
+              ziplining through the forest.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Safety briefing</li>
+              <li>Equipment hires</li>
+              <li>Professional instructors</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-price="750">
           <img src="assets/images/kayaking river.jpeg" alt="Kayaking" />
           <div class="card-content">
-            <h2>Kayaking</h2>
-            <p>Peaceful kayaking on scenic waters.</p>
-            <p><strong>R750</strong></p>
+            <h2>Kayaking Experience</h2>
+            <p><strong>Fee:</strong> R750</p>
+            <p>
+              <strong>Purpose:</strong> Paddle through scenic rivers and lakes.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Kayak and paddle</li>
+              <li>Safety equipment</li>
+              <li>Guided route</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-price="750">
           <img
             src="assets/images/rock climbing wall.jpeg"
             alt="Rock Climbing"
           />
           <div class="card-content">
-            <h2>Rock Climbing</h2>
-            <p>Challenge yourself with guided climbs.</p>
-            <p><strong>R750</strong></p>
+            <h2>Rock Climbing Session</h2>
+            <p><strong>Fee:</strong> R750</p>
+            <p>
+              <strong>Purpose:</strong> Learn climbing techniques on natural
+              rock faces.
+            </p>
+            <p><strong>Includes:</strong></p>
+            <ul class="includes">
+              <li>Climbing equipment</li>
+              <li>Safety instruction</li>
+              <li>Professional guide</li>
+            </ul>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="booking-calculator" aria-labelledby="calculator-title">
+      <h1 id="calculator-title">Calculate Your Booking</h1>
+      <p class="calculator-intro">
+        Choose quantities to see your total and any multi-booking discount.
+      </p>
+      <div class="calculator-layout">
+        <div>
+          <h2>Select adventures</h2>
+          <div id="booking-options" class="booking-options"></div>
+        </div>
+        <aside class="calculator-summary" aria-live="polite">
+          <h2>Booking summary</h2>
+          <dl>
+            <div>
+              <dt>Bookings</dt>
+              <dd id="booking-count">0</dd>
+            </div>
+            <div>
+              <dt>Subtotal</dt>
+              <dd id="booking-subtotal">R0</dd>
+            </div>
+            <div>
+              <dt>Discount</dt>
+              <dd id="booking-discount">0%</dd>
+            </div>
+            <div>
+              <dt>You save</dt>
+              <dd id="booking-savings">R0</dd>
+            </div>
+          </dl>
+          <p class="booking-total">
+            <span>Total</span><strong id="booking-total">R0</strong>
+          </p>
+          <p class="discount-rules">
+            1 booking: no discount · 2: 5% · 3: 10% · 4 or more: 15%
+          </p>
+        </aside>
       </div>
     </section>
 
     <footer>
       <p>&copy; 2026 Adventure Escape SA | Cape Town, Western Cape</p>
     </footer>
+    <script src="assets/js/calculator.js" defer></script>
   </body>
 </html>

@@ -8,8 +8,12 @@ The website is built with plain HTML and CSS. It has no build step or project de
 
 - **Home** (`index.html`): introduction, mission, and reasons to choose Adventure Escape SA.
 - **About** (`about.html`): the company story and values.
-- **Adventures** (`adventures.html`): adventure packages and individual activities with prices and details.
+- **Adventures** (`adventures.html`): adventure packages and individual activities with prices, details, and a live booking calculator.
 - **Contact** (`contact.html`): an inquiry form and business contact information.
+
+### Booking calculator
+
+On the Adventures page, enter a quantity for each package or activity to see the booking count, subtotal, discount, savings, and estimated total. Discounts are based on the total number of bookings: one booking gets no discount, two get 5%, three get 10%, and four or more get 15%. Prices are shown in South African rand (ZAR). The calculator runs in the browser and does not submit or store a booking.
 
 ### Run locally
 
@@ -40,7 +44,9 @@ AdventureEscapeSA_Web/
 └── assets/
     ├── css/
     │   └── style.css
+    ├── js/
+    │   └── calculator.js
     └── images/
 ```
 
-Shared layout and page styling are in `assets/css/style.css`; page content is in the corresponding HTML files, and visual assets are in `assets/images/`.
+Shared layout and page styling are in `assets/css/style.css`; page content is in the corresponding HTML files, the booking calculator logic is in `assets/js/calculator.js`, and visual assets are in `assets/images/`.
